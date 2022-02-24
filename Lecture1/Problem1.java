@@ -12,7 +12,7 @@ public class Problem1 {
         if(randomNum > 5){
             System.out.println("The number is greater than 5.");
         } else {
-            System.out.println("The number is not greater than 5.");
+            System.out.println("The number smaller than 5.");
         }
 
 

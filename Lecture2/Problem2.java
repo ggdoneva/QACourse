@@ -1,29 +1,30 @@
 package Lecture2;
 
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.Scanner;
 
 public class Problem2 {
+
     public static void main(String[] args) {
 
-        int min = -100;
-        int max = 100;
+        Scanner scan = new Scanner(System.in);
+        int grade = scan.nextInt();
 
-        int randomNum = ThreadLocalRandom.current().nextInt(min,max+1);
-        System.out.println(randomNum);
-
-        if(randomNum > 0){
-            System.out.println("The number is positive.");
+        if(grade == 2){
+            System.out.println("Poor 2");
+        } else if (grade == 3){
+            System.out.println("Medium 3");
+        } else if (grade == 4){
+            System.out.println("Good 4");
+        } else if (grade == 5){
+            System.out.println("Very good 5");
+        } else if (grade == 6){
+            System.out.println("Excellent 6");
         } else {
-            System.out.println("The number is negative.");
+            System.out.println("error");
         }
 
-        String result = randomNum>0 ? "number is positive" : "number is negative";
-        System.out.println(result);
-
-        System.out.println();
-
+        scan.close();
 
     }
-
 
 }
